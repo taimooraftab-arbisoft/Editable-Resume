@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taimoor Aftab</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-section">
+        <img class="top-cloud" src="/static/images/cloud.png" alt="cloud-img">
+        <h1>I'm {{ name }}.</h1>
+        <h2>{{ designation }}</h2>
+        <img class="bottom-cloud" src="/static/images/cloud.png" alt="cloud-img">
+        <img src="/static/images/mountain.png" alt="mountain-img">
+    </div>
+    <div class="middle-section">
+        <div class="profile">
+            <img src="/static/images/taimoor.jpg" alt="profile-pic" class="profile-picture">
+            <h2>Hello.</h2>
+            <p class="intro">I'm a creative and ambitious Computer Science student with excellent development, problem solving, analytical thinking and time management skills eager to learn and grow in a renowned organization.
+            </p>
+        </div>
+        <hr>
+        {% block skills %}{% endblock skills %}
+        <hr>
+        {% block projects %}{% endblock projects %}
+        <hr>
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <p class="contact-message">Contact me if you want to hire me, have a query, or just wanna talk.</p>
+            <a class="btn" href="mailto:{{mailing_address}}">CONTACT ME</a>
+        </div>
+    </div>
+
+
+    <div class="bottom-section">
+        <a class="footer-link" href={{ linkedin }}>LinkedIn</a>
+        <a class="footer-link" href={{ twitter }}>Twitter</a>
+        <a class="footer-link" href={{ facebook }}>Facebook</a>
+        <p class="copyright">© 2020 Taimoor Aftab.</p>
+    </div>
+
+</body>
+
+</html>
